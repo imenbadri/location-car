@@ -366,9 +366,9 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/forms/general.html" class="nav-link">
+                <a href="{{route('addvoiture')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
+                  <p>ajout Voiture</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -604,7 +604,7 @@
                             <li class="nav-item dropdown">
                               
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre><i class="nav-icon far fa-circle text-danger"></i>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                     <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

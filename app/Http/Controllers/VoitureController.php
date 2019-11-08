@@ -10,7 +10,11 @@ class VoitureController extends Controller
 {
     public function voir_voiture()
     {
-    	return view('voir_voiture');
+    	$voitures=Voiture::orderBy('Id','Desc')->get();
+        //dd($voitures);
+        
+        return view('voir_voiture', ['voitures'=>$voitures]);
+    	
     }
     
 }
